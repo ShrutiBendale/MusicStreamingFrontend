@@ -11,7 +11,7 @@
 :root {
   --color-bg: #ffffff ; /*dfdbd8*/
   --color-bg-variant: #e3cfc7 ;
-  --color-primary: #3b5480 ;  /*1b6c58*/
+  --color-primary: #000000 ;  /*1b6c58*/
   --color-primary-variant: #cce1eb ; /*789b9293, */
   --color-accent: #77432c ;
   --color-white: #ffffff ;
@@ -34,4 +34,17 @@ body {
   color: var(--color-primary);
   line-height: 1.7;
   position: relative;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+a:link, a:hover {
+  color: var(--color-white);
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }

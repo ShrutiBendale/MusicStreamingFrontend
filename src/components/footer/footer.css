@@ -1,0 +1,34 @@
+.footer {
+    background: var( --color-primary-variant);
+    border-radius: 17rem 17rem 0 0 ;
+    text-align:center;  
+    font-size: 0.9rem;
+    margin-top: 3rem; 
+}
+
+.footer > a, li {
+    color: var(--color-primary);
+}
+
+.footer_logo {
+   font-size: 2rem;
+   font-weight:500;
+   margin-bottom: 1rem;
+   display: inline-block;
+   padding-top: 1rem;
+}
+
+.permalinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto 2rem;
+}
+
+.footer_socials {
+    display: flex;
+    justify-content: center;    
+    gap: 1rem;
+    padding-bottom:2rem;
+}

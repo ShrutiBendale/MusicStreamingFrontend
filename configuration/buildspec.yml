@@ -15,9 +15,9 @@ phases:
       - echo Build completed on `date`
   post_build:
     commands:
-      - aws s3 cp --recursive ./build s3://shrutiandskye.com/
-      - aws s3 cp --cache-control="max-age=0, no-cache, no-store, must-revalidate" ./build/index.html s3://shrutiandskye.com/
-      - aws cloudfront create-invalidation --distribution-id E2D0FOOZO4DY9H --paths /*
+      - aws s3 cp --recursive ./build s3://melodize.shrutiandskye.com/
+      - aws s3 cp --cache-control="max-age=0, no-cache, no-store, must-revalidate" ./build/index.html s3://melodize.shrutiandskye.com/
+      # - aws cloudfront create-invalidation --distribution-id E2D0FOOZO4DY9H --paths /* Todo: update this with the new cloudfront distribution
 artifacts:
   files:
     - "build/*"
