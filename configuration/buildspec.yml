@@ -1,0 +1,24 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+  build:
+    commands:
+      - echo Build started on `date`
+      - npm run build
+    finally:
+      - echo Build completed on `date`
+  post_build:
+    commands:
+      - aws s3 cp --recursive ./build s3://shrutiandskye.com/
+      - aws s3 cp --cache-control="max-age=0, no-cache, no-store, must-revalidate" ./build/index.html s3://shrutiandskye.com/
+      - aws cloudfront create-invalidation --distribution-id E2D0FOOZO4DY9H --paths /*
+artifacts:
+  files:
+    - "build/*"
+    - "build/**/*"  
