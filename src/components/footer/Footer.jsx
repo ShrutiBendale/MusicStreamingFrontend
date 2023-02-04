@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <section id="footer">
         <div className="containier footer footer_container">
-            <a href="#" className='footer_logo'>Shruti</a> 
+            <a href="https://shrutiandskye.com/#" className='footer_logo'>Shruti</a> 
             <ul className='permalinks'>
                     <li><a href = 'https://shrutiandskye.com/#'>Home</a></li>
                     <li><a href = 'https://shrutiandskye.com/#projects'>Projects</a></li>
