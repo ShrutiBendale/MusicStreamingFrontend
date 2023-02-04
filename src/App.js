@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+// import TestComponent from './components/testcomponent/TestComponent'
+// import Header from './components/header/Header'
+import MusicPlayer from './components/musicplayer/MusicPlayer'
+import SearchBar from './components/searchbar/SearchBar';
+import "./App.css"
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      {/* <TestComponent/> */}
+
+      <div className='header-container'>
+        <h1>Harmonize</h1>
+        <div className='search'>
+        </div>
+      </div>
+
+      <div className='body-container'>
+        <MusicPlayer />
+        <SearchBar/>
+        {/* {data.results.products ? <Songs songs={data.results.products} /> : ""} */}
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

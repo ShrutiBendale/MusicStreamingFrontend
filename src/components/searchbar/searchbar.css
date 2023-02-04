@@ -1,0 +1,27 @@
+.search-container {
+    margin-top: 5vh;
+    min-height: 10vh;
+    max-height: 10vh;
+    width: 35vw;
+}
+
+.search-container > input[type=text] {
+    position:relative;
+    width:25vw;
+    height:3rem;
+    background-color: rgb(244, 244, 244);
+    /* border: 3px;
+    border-color: black; */
+    border-radius: 2rem;
+    padding: 10px;
+
+}
+
+.search-container > input[type=submit] {
+    position:relative;
+    margin-left: 1vw;
+    border-radius: 2rem;
+    width:9vw;
+    height:3rem;
+    background-color: var(--color-bg-variant);
+}
