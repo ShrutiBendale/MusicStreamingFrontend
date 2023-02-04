@@ -1,6 +1,6 @@
 import React from 'react'
 import './songs.css'
-// import Member from '../member/Member';
+import SongCard from '../songcard/SongCard';
 
 export default function Songs({ songs }) {
 
@@ -9,14 +9,10 @@ export default function Songs({ songs }) {
         {!songs ? (
             <p>No songs found! Try improving the search query...</p>
         ) : (
-            // <h4>{songs ? songs[0].title : "abc"} </h4>
-            // <ul>
-            //     <li>{songs[0].title}</li>
-            //     <li>{songs[1].title}</li>
-            // </ul>
             <ul>
-              {songs.map((el) => (
-                  <li>{el.title}</li>
+              {songs.map((el, i) => (
+                //   <li key = {i}>{el.title}</li>
+                  <SongCard songInfo={el} />
               ))}
             </ul> 
         )}

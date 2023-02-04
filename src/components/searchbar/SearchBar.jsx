@@ -11,7 +11,7 @@ export default function SearchBar() {
         <div className='search-container'>
             <input
                 type="text"
-                placeholder="Search for a song"
+                placeholder="Search for a song or artist"
                 onChange={(e) => setData({ ...data, slug: e.target.value })}
                 value={data.slug}
             />

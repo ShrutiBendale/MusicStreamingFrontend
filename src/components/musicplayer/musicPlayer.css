@@ -4,7 +4,7 @@
     /* background: rgba(207, 211, 226, 0.523); */
     margin-left:3vw;
     margin-right:3vw;
-    margin-top:10vh;
+    margin-top:12vh;
     min-width: 25vw;
     
     
@@ -19,9 +19,10 @@
 
 .music-player-container > img {
     position: relative;
-    width: 100%;
+    width: auto;
     height: 50vh;
-    max-height: 100%;
+    max-height:50vh;
+    max-width:50w;
     border-radius: 4rem ;
     
 }
@@ -51,12 +52,10 @@
     justify-content: center;
 }
 .song-controls > a{
-       /* position: fixed; */
+    display:  block;
     align-content: center;
     gap:2rem;
-    size: 6rem;
-    font-size: 0.9em;
-    background-size: 120%;
     height: 5rem;
+    
     /* background: rebeccapurple; */
 }

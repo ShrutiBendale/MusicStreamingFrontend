@@ -1,0 +1,27 @@
+.song-card {
+    display: flex;
+    height: 13vh;
+    padding: 10px;
+    margin-bottom: 0.5rem;
+    border-radius: 18px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 20%);
+    scroll-snap-align: start;
+    /* transition: all 0.2s; */
+    position:relative;
+    overflow: hidden;
+}
+  
+.song-card:hover {
+    color: var( --color-accent);
+    background: var(--color-primary-variant);
+    opacity: 70%;
+  }
+  
+.song-card.card-title {
+    font-size: 10px;
+}
+  
+.song-card.card-content .card-text{
+    height: 8px;
+    width: 35vw;
+}

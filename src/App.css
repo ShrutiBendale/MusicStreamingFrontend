@@ -5,13 +5,9 @@
 }
 
 .header-container {
-  /* position: relative; */
   display: flex;
   flex-direction: row;
   height: 10vh;
-  /* gap: 50vw; */
-  /* background: rebeccapurple; */
-  justify-content:space-between;
 }
 
 .header-container > h1 {
@@ -20,6 +16,7 @@
   font-family: 'Shadows Into Light', cursive;
   font-size: 50px;
 }
+
 
 .header-container .search input[type=text]{
   align-self: center;
@@ -35,4 +32,21 @@
   flex-direction: row;
 }
 
+.body-container .lyrics{
+  margin-left: 3rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  border: solid #000;
+  border-width: 1px 1px;
+  border-radius: 2rem;
+  width: 27vw;
+  /* height: 100vh; */
+}
+
+.body-container > .lyrics > h2 {
+  font-family: 'Shadows Into Light', cursive;
+  /* padding-left: 45vw; */
+}
 

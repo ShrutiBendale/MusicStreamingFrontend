@@ -20,7 +20,9 @@ const App = () => {
       <div className='body-container'>
         <MusicPlayer />
         <SearchBar/>
-        {/* {data.results.products ? <Songs songs={data.results.products} /> : ""} */}
+        <div className='lyrics'>
+          <h2>Lyrics</h2>
+        </div>
       </div>
     </div>
   )

@@ -7,7 +7,7 @@
 
 .search-container > input[type=text] {
     position:relative;
-    width:25vw;
+    width:70%;
     height:3rem;
     background-color: rgb(244, 244, 244);
     /* border: 3px;
@@ -21,7 +21,7 @@
     position:relative;
     margin-left: 1vw;
     border-radius: 2rem;
-    width:9vw;
+    width: 25%;
     height:3rem;
     background-color: var(--color-bg-variant);
 }
