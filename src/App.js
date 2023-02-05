@@ -12,7 +12,7 @@ const App = () => {
     <div className='App'>
       <section id='main'>
         <div className='header-container'>
-          <h1>Harmonize</h1>
+          <h1>Melodize</h1>
           <div className='search'>
           </div>
         </div>
