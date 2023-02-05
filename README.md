@@ -1,6 +1,6 @@
 # ShrutiAndSkyeFrontend
 
-This repo contains the frontend code for the landing page of https://harmonize.shrutiandskye.com/, a music streaming web app. The landing page is a npm based React app.
+This repo contains the frontend code for the landing page of https://melodize.shrutiandskye.com/, a music streaming web app. The landing page is a npm based React app.
 
 I have a CI/CD pipeline set up that builds this React app and deploys the assets to a AWS S3 bucket that hosts the static assets. The assets are distributed via the AWS CloudFront CDN.
 
