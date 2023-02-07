@@ -33,10 +33,11 @@
 }
 
 .body-container .lyrics{
-  margin-left: 3rem;
+  margin-left: 2.8vw;
+  margin-right: 0.5vw;
   padding-left: 2rem;
   padding-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 7.5vh;
   margin-top: 5rem;
   border: solid #000;
   border-width: 1px 1px;

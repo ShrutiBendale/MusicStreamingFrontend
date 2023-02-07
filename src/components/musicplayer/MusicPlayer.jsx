@@ -14,9 +14,9 @@ export default function MusicPlayer() {
             </div>
             <div className='song-controls '>
                 {/*todo: add a control bar and play/pause button*/}
-                <a onClick={() => "" }><MdSkipPrevious/></a>
-                <a onClick={() => "" }><MdPlayArrow/></a>
-                <a onClick={() => "" }><MdSkipNext/></a>
+                <a onClick={() => "" }><MdSkipPrevious size={60}/></a>
+                <a onClick={() => "" }><MdPlayArrow size={60}/></a>
+                <a onClick={() => "" }><MdSkipNext size={60}/></a>
             </div>
         </div>
     );

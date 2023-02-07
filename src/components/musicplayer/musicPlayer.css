@@ -3,7 +3,7 @@
     max-height: 80vh;
     /* background: rgba(207, 211, 226, 0.523); */
     margin-left:3vw;
-    margin-right:3vw;
+    margin-right:0.5vw;
     margin-top:12vh;
     min-width: 25vw;
     
@@ -19,7 +19,7 @@
 
 .music-player-container > img {
     position: relative;
-    width: auto;
+    width: 27vw;
     height: 50vh;
     max-height:50vh;
     max-width:50w;
@@ -54,7 +54,7 @@
 .song-controls > a{
     display:  block;
     align-content: center;
-    gap:2rem;
+    gap:1.5rem;
     height: 5rem;
     
     /* background: rebeccapurple; */

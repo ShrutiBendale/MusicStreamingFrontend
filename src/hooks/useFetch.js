@@ -1,21 +1,21 @@
 import { useState, useEffect } from "react";
 
-import got from "../api/got";
+import getSongs from "../api/getSongs";
 
 const useFetch = () => {
   const [data, setData] = useState({
-    slug: "",
+    query: "",
     results: [],
   });
 
   useEffect(() => {
-    if (data.slug === "all") {
-        data.slug = "products" //todo: update this to a parameter that retrieves all songs when the search bar is empty
+    if (data.query === "") {
+        data.query = "*" //todo: remove this if statement
     }
     const timeoutId = setTimeout(() => {
     const fetch = async () => {
         try {
-        const res = await got.get(`/${data.slug}`);
+        const res = await getSongs.get(`?query=${data.query}`);
         setData({ ...data, results: res.data });
         // console.log(res.data);
         } catch (err) {
@@ -27,7 +27,7 @@ const useFetch = () => {
     }, 1000);
     return () => clearTimeout(timeoutId);
     
-  }, [data.slug]);
+  }, [data.query]);
 
   return { data, setData };
 };
