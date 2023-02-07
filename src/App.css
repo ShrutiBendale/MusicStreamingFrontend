@@ -30,6 +30,7 @@
 .body-container {
   display: flex;
   flex-direction: row;
+  height: 90vh;
 }
 
 .body-container .lyrics{
@@ -37,11 +38,16 @@
   margin-right: 0.5vw;
   padding-left: 2rem;
   padding-top: 1rem;
-  margin-bottom: 7.5vh;
+  margin-bottom: 6.5vh;
   margin-top: 5rem;
-  border: solid #000;
+  border:solid 2px #41403E;
   border-width: 1px 1px;
   border-radius: 2rem;
+  /* border:solid 2px #41403E;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius:15px 255px; */
   width: 27vw;
   /* height: 100vh; */
 }
@@ -51,3 +57,14 @@
   /* padding-left: 45vw; */
 }
 
+@media screen and (max-width: 600px) {
+  .body-container > .lyrics {
+    display: none;
+  }
+
+  .header-container > h1 {
+    padding-left: 0;
+    width: 50%;
+    margin: auto;
+  }
+}

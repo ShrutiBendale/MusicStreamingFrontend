@@ -1,6 +1,6 @@
 import React from 'react'
 import './songCard.css'
-import { MdPlayArrow, MdPause, MdSkipPrevious, MdSkipNext } from "react-icons/md";
+import { BsPlayCircle } from "react-icons/bs";
 
 const SongCard = ({songInfo}) => {
   return (
@@ -8,7 +8,7 @@ const SongCard = ({songInfo}) => {
         <li className="card">
             <div>
             <div className='card-icon'>
-                  <a onClick={() => "" }><MdPlayArrow  size={60} /></a>
+                  <a onClick={() => "" }><BsPlayCircle  size={40} /></a>
               </div>
 
               <h4 className="card-title">{songInfo.songName}</h4>

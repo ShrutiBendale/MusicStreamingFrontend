@@ -10,12 +10,28 @@
     margin-right: 0.5vw;
     padding:1rem;
     overflow: scroll;
-    border: solid #000;
+    border:solid 2px #41403E;
     border-width: 1px 1px;
     border-radius: 2rem;
+    /* 
+    border-top-left-radius: 255px 10px;
+    border-top-right-radius: 15px 225px;
+    border-bottom-right-radius: 225px 15px;
+    border-bottom-left-radius:15px 255px; */
 
 }
 .songs-container > p{
     color: gray; 
 
 }
+
+@media screen and (max-width: 600px) {
+    .songs-container {
+        width: 90%;
+        margin-left: 5%;
+        height: 60%;
+        min-height: 60vh;
+        max-height: 60vh;
+
+    }
+  }

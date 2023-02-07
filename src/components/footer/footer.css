@@ -32,3 +32,10 @@
     gap: 1rem;
     padding-bottom:2rem;
 }
+
+
+@media screen and (max-width: 600px) {
+    .footer {
+        display: none;
+    }
+}

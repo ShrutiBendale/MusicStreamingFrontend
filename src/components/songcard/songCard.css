@@ -29,9 +29,10 @@
 
 .song-card .card-icon {
     position: absolute;
-    width:15%;
+    width:10%;
     height: 80%;
     right: 0;
+    padding-top: 1.3vh;
     margin-right: 2rem;
     
 }

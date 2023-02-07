@@ -2,9 +2,9 @@
     min-height: 80vh;
     max-height: 80vh;
     /* background: rgba(207, 211, 226, 0.523); */
-    margin-left:3vw;
+    margin-left:4vw;
     margin-right:0.5vw;
-    margin-top:12vh;
+    margin-top: 5.5rem;
     min-width: 25vw;
     
     
@@ -19,8 +19,8 @@
 
 .music-player-container > img {
     position: relative;
-    width: 27vw;
-    height: 50vh;
+    width: 25vw;
+    height: 47vh;
     max-height:50vh;
     max-width:50w;
     border-radius: 4rem ;
@@ -42,7 +42,9 @@
 .song-details {
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center; 
+    width: 50%;
+    margin: auto;   
 }
 
 .song-controls {
@@ -50,12 +52,73 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 9vh;
+    width: 50%;
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    /* 
+    background:transparent;
+    border:solid 2px #41403E;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-bottom-right-radius: 225px 15px;
+    border-bottom-left-radius:15px 255px; */
 }
 .song-controls > a{
     display:  block;
     align-content: center;
     gap:1.5rem;
-    height: 5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .music-player-container {
+        position: absolute;
+        width: 100vw;
+        margin-left:0;
+        margin-right:0;
+        height: 200vh;
+        max-height: 100vh;
+        bottom: 0;
+        border-top: solid;
+        border-radius: 1rem;
+        min-height: auto;
+        max-height: 12vh;
+        /* background: rgba(207, 211, 226, 0.523); */
+
+    }
+    .music-player-container > img {
+        /* display: none; */
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 12vh;
+        max-height:11.8vh;
+        max-width:10w;
+        border-radius: 1rem ;
+        padding: 2px;
+
+
+    }
+
+    .music-player-container >.song-controls {
+        height: 4vh;
+        width: 40%;
+        margin-right: 19vh;
+        margin-top: 2vh;
+        /* background: red; */
+        padding-top: 5vh;
+        
+    }
+
     
-    /* background: rebeccapurple; */
+    .song-controls > a {
+        display:  block;
+        align-content: center;
+        gap:0rem;
+    }
+
+    .music-player-container > .song-details {
+        display: none;
+    }
 }

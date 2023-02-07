@@ -4,7 +4,7 @@ import getSongs from "../api/getSongs";
 
 const useFetch = () => {
   const [data, setData] = useState({
-    query: "",
+    query: " ",
     results: [],
   });
 

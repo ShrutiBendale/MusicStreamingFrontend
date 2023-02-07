@@ -29,3 +29,12 @@
 .search-container > input[type=submit]:hover {
     background-color: var(--color-accent);
 }
+
+@media screen and (max-width: 600px) {
+    .search-container {
+        /* margin-top: 5vh;
+        min-height: 10vh;
+        max-height: 10vh; */
+        width: 100%;
+    }    
+  }
