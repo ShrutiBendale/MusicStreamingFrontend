@@ -84,7 +84,7 @@
         border-radius: 1rem;
         min-height: auto;
         max-height: 12vh;
-        /* background: rgba(207, 211, 226, 0.523); */
+        background: white;
 
     }
     .music-player-container > img {
