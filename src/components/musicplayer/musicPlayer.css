@@ -73,7 +73,7 @@
 
 @media screen and (max-width: 600px) {
     .music-player-container {
-        position: absolute;
+        position: fixed;
         width: 100vw;
         margin-left:0;
         margin-right:0;

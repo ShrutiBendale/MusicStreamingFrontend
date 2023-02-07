@@ -30,7 +30,7 @@
 .body-container {
   display: flex;
   flex-direction: row;
-  height: 90vh;
+  height: 80vh;
 }
 
 .body-container .lyrics{
