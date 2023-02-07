@@ -35,6 +35,12 @@
         /* margin-top: 5vh;
         min-height: 10vh;
         max-height: 10vh; */
-        width: 100%;
-    }    
+        width: 95%;
+        
+    }  
+
+    .search-container > input[type=text] {
+        margin-left: 5vw;
+        width:65%;
+    }
   }
