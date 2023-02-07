@@ -6,6 +6,8 @@
     max-height: 70vh;
     /* background: var(--color-primary-variant); */
     margin-top: 1.5rem;  
+    margin-left: 1vw;
+    margin-right: 0.5vw;
     padding:1rem;
     overflow: scroll;
     border: solid #000;
