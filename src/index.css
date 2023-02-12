@@ -40,7 +40,11 @@ a {
   color: var(--color-primary);
 }
 
-a:link, a:hover {
+a:link {
+  color: var(--color-primary);
+}
+
+a:hover {
   color: var(--color-white);
 }
 
